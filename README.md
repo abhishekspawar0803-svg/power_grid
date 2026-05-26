@@ -6,20 +6,21 @@ Deep learning-based power grid anomaly detection using sequence modeling, recons
 
 ## Overview
 
-This project presents a deep learning pipeline for detecting anomalies in power grid data using sequence-based modeling. It combines an LSTM autoencoder for anomaly-sensitive feature learning with a downstream classifier for fault category prediction, and also includes a Streamlit interface for interactive analysis and visualization.[page:0][page:1]
+This project presents a deep learning pipeline for detecting anomalies in power grid data using sequence-based modeling. It combines an LSTM autoencoder for anomaly-sensitive feature learning with a downstream classifier for fault category prediction, and also includes a Streamlit interface for interactive analysis and visualization.
 
 ## Key Features
 
-- LSTM-based sequence modeling for power grid anomaly detection.[page:0][page:1]
-- Autoencoder-driven latent feature learning from multivariate grid signals.[page:0][page:1]
-- Multi-class classification of grid conditions including normal and anomalous states.[page:0]
-- Streamlit application for interactive fault analysis and visualization.[page:0]
-- Modular project structure with saved model weights and deployment files.[page:1]
+- LSTM-based sequence modeling for power grid anomaly detection.
+- Autoencoder-driven latent feature learning from multivariate grid signals.
+- Multi-class classification of grid conditions including normal and anomalous states.
+- Streamlit application for interactive fault analysis and visualization.
+- Modular project structure with saved model weights and deployment files.
 
 ## Dataset and Classes
 
-The project works on multivariate power system measurements and frames anomaly detection as a multi-class learning problem.[page:0]  
-The notebook defines the following operating classes:[page:0]
+The project works on multivariate power system measurements and frames anomaly detection as a multi-class learning problem.
+
+The notebook defines the following operating classes:
 
 - Normal
 - Voltage Anomaly
@@ -33,21 +34,21 @@ The notebook defines the following operating classes:[page:0]
 
 ## Methodology
 
-The workflow begins with preprocessing and organizing the power grid signals into sequence windows suitable for recurrent modeling.[page:0]  
-An LSTM autoencoder is used to learn sequence representations, after which learned features are used for downstream classification of grid conditions.[page:0][page:1]  
-This design allows the project to combine temporal pattern learning with anomaly-oriented decision support.[page:0][page:1]
+The workflow begins with preprocessing and organizing the power grid signals into sequence windows suitable for recurrent modeling.
+
+An LSTM autoencoder is used to learn sequence representations, after which learned features are used for downstream classification of grid conditions.
+
+This design allows the project to combine temporal pattern learning with anomaly-oriented decision support.
 
 ## Model Training
 
-The notebook includes model training and evaluation for the sequence-learning stage, making the training behavior itself useful to show in the README.[page:0]  
-A training-curve figure helps demonstrate convergence and gives visitors quick evidence that the model was actually trained and monitored rather than only implemented.[page:0]
+The notebook includes model training and evaluation for the sequence-learning stage.
 
 ![Autoencoder Training Curve](images/autoencoder_training_curve.png)
 
 ## Evaluation
 
-Because this project involves classification across multiple grid conditions, confusion matrices are among the most informative result visuals for the README.[page:0]  
-They show where the model distinguishes well between classes and where overlap remains between anomaly categories.[page:0]
+Because this project involves classification across multiple grid conditions, confusion matrices are among the most informative result visuals for the README.
 
 ![Autoencoder Confusion Matrix](images/autoencoder_conf_matrix.png)
 
@@ -55,9 +56,9 @@ They show where the model distinguishes well between classes and where overlap r
 
 ## Repository Structure
 
-- `1.Power Grid Anomaly Detection (LSTM Autoencoder + Streamlit).ipynb` — main notebook for preprocessing, training, and evaluation.[page:0]
-- `grid_anomaly/` — deployment-oriented project files including app and model components.[page:1]
-- `requirements.txt` — dependency file for reproducibility.[page:2]
+- `1.Power Grid Anomaly Detection (LSTM Autoencoder + Streamlit).ipynb` — main notebook for preprocessing, training, and evaluation.
+- `grid_anomaly/` — deployment-oriented project files including app and model components.
+- `requirements.txt` — dependency file for reproducibility.
 
 ## Applications
 
@@ -66,13 +67,13 @@ This project is relevant to:
 - smart grid monitoring,
 - anomaly-aware grid diagnostics,
 - fault classification in electrical systems,
-- AI-assisted condition monitoring for power networks.[page:0][page:1]
+- AI-assisted condition monitoring for power networks.
 
 ## Future Improvements
 
-- Add stronger repository cleanup and dependency specification for easier reproduction.[page:1][page:2]
-- Extend benchmarking with additional anomaly detection baselines.[cite:261]
-- Improve deployment packaging for smoother end-user execution.[page:1]
+- Add stronger repository cleanup and dependency specification for easier reproduction.
+- Extend benchmarking with additional anomaly detection baselines.
+- Improve deployment packaging for smoother end-user execution.
 
 ## Author
 
