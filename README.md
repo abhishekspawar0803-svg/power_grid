@@ -2,7 +2,7 @@
 
 Deep learning-based power grid anomaly detection using sequence modeling, reconstruction error analysis, and classification for grid event monitoring.
 
-![Application Interface](application_interface.png)
+![Application Interface](images/application_interface.png)
 
 ## Overview
 
@@ -27,9 +27,9 @@ The notebook defines the following operating classes:[page:0]
 - Power Factor Anomaly
 - Combined Anomaly
 
-![Anomaly Reference](anomaly_reference.png)
+![Anomaly Reference](images/anomaly_reference.png)
 
-![Class Distribution](class_distribution.png)
+![Class Distribution](images/class_distribution.png)
 
 ## Methodology
 
@@ -42,16 +42,16 @@ This design allows the project to combine temporal pattern learning with anomaly
 The notebook includes model training and evaluation for the sequence-learning stage, making the training behavior itself useful to show in the README.[page:0]  
 A training-curve figure helps demonstrate convergence and gives visitors quick evidence that the model was actually trained and monitored rather than only implemented.[page:0]
 
-![Autoencoder Training Curve](autoencoder_training_curve.png)
+![Autoencoder Training Curve](images/autoencoder_training_curve.png)
 
 ## Evaluation
 
 Because this project involves classification across multiple grid conditions, confusion matrices are among the most informative result visuals for the README.[page:0]  
 They show where the model distinguishes well between classes and where overlap remains between anomaly categories.[page:0]
 
-![Autoencoder Confusion Matrix](autoencoder_conf_matrix.png)
+![Autoencoder Confusion Matrix](images/autoencoder_conf_matrix.png)
 
-![Classifier Confusion Matrix](classifier_conf_matrix.png)
+![Classifier Confusion Matrix](images/classifier_conf_matrix.png)
 
 ## Repository Structure
 
