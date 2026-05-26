@@ -1,0 +1,9 @@
+{
+    "anomaly_threshold": 4.5,
+    "label_map": {
+        "0": "Voltage Anomaly",
+        "1": "Frequency Anomaly",
+        "2": "Power Factor Anomaly",
+        "3": "Combined Anomaly"
+    }
+}
